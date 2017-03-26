@@ -25,13 +25,13 @@ GNU Scientific Library (GSL) should be installed before the compilation.
     -- component:   number of principal components, e.g. 4
     -- permute:     number of permutations, e.g. 5000
     -- removal:     number of maximal outliers, e.g. 20
+    
     -- Data.txt:    re-format the data according to the following instruction,
                     re-name it to "Data.txt", and put it into the same directory with the program);
                     each row (except the last row) represents genotype information of one snp, 
                     while the last row represents phenotype information (case = 1, control = 0);
                     each column reperesents one individual, coding AA as 0, AB as 1, BB as 2, and
-                    missing as -1, where the allele B is the minor allele.
-                    e.g. 6 individuals and 4 SNPs
+                    missing as -1, where the allele B is the minor allele; e.g. 6 individuals and 4 SNPs:
                     2 1 0 1 0 1
                     1 2 2 0 1 1
                     2 1 1 1 0 2
@@ -39,4 +39,5 @@ GNU Scientific Library (GSL) should be installed before the compilation.
                     1 1 1 0 0 0
 
 #### References
+
 Y Shen, Z Liu, and J Ott. Systematic removal of outliers to reduce heterogeneity in case-control association studies. Human Heredity, 70(4):227-231, 2010.
