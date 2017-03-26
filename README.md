@@ -8,7 +8,7 @@ For more information please contact zhe.liu.uchicago@gmail.com
 
 In human case-control association studies, population heterogeneity is often present and can lead to increased false-positive results. Various methods have been proposed and are in current use to remedy this situation. We assume that heterogeneity is due to a relatively small number of individuals whose allele frequencies differ from those of the remainder of the sample. For this situation, we propose a new method of handling heterogeneity by removing outliers in a controlled manner. In a coordinate system of the c largest principal components in multidimensional scaling (MDS), we systematically remove one after another of the most extreme outlying individuals and each time recompute the largest association test statistic. The smallest p-value obtained within M removals serves as our test statistic whose significance level is assessed in randomization samples. In power simulations of our method and three methods in current use, averaged over several different scenarios, the best method turned out to be logistic regression analysis (based on all individuals) with MDS components as covariates. Our proposed method ranked closely behind logistic regression analysis with MDS components but ahead of other commonly used approaches. In analyses of real datasets our method performed best.
 
-#### Installation 
+#### Compilation 
 
 Only for Linux/Unix and Mac OS X platforms.
 
@@ -22,6 +22,7 @@ GNU Scientific Library (GSL) should be installed before the compilation.
     $./MDSOutlier component permute removal
 
     -- MDSOutlier:  the executable file
+    
     -- component:   number of principal components, e.g. 4
     -- permute:     number of permutations, e.g. 5000
     -- removal:     number of maximal outliers, e.g. 20
